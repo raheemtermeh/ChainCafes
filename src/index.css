@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'IranianSans';
+  src: url('./assets/fonts/IranianSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, #432818 0%, #BB9457 90%);
+  filter: blur(100px);
+}
+
+
+.bluee__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 10%, #214d76 90%);
+  filter: blur(123px);
+}
+
+.bg-custom {
+  background-color: #05070d; 
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-gradient-outer {
+  background: linear-gradient(to right, #29180c 0%, #000000 10%), linear-gradient(to left, #29180c 0%, #000000 10%);
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: 51% 100%;
+}
+
+.card-hover-effect:hover .bg-gradient-outer {
+  background-size: 100% 100%;
+  transition: background-size 0.4s ease-in-out;
+}
+
+.card-hover-effect {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hover-effect:hover {
+  transform: scale(1.05);
+}
+
+.card-hover-effect .content {
+  position: relative;
+  z-index: 2;
+}
+
+.card-hover-effect:hover .text-accent {
+  color: #ff9933; /* رنگ برجسته در هاور */
+}
+
+.card-hover-effect:hover .text-primary {
+  color: #e0d8cc; /* رنگ برجسته در هاور */
+}
